@@ -42,15 +42,14 @@ public class Main {
                         scanner.nextLine();
                         printKarty(kartyKoloru(Karty, kolor));
                     }
-                    case 6 -> { // remove all cards with czyOdkryta() == false
+                    case 6 -> {
                         for (int i = 0; i < Karty.size(); i++) {
                             if (Karty.get(i).czyZakryta()) {
                                 Karty.remove(i);
                                 i--;
                             }
                         }
-
-                    }//TODO
+                    }
                     default -> System.out.println("Błędny numer opcji");
 
                 }

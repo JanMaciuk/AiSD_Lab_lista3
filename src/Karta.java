@@ -27,17 +27,12 @@ public class Karta {
         return wartosc + " " + kolor;
 
     }
-
+    // Tylko gettery, setery nie będą używane.
     public int getWartosc() { return Wartosc; }
-
-    public void setWartosc(int wartosc) { this.Wartosc = wartosc; }
 
     public int getKolor() { return Kolor; }
 
-    public void setKolor(int kolor) { this.Kolor = kolor; }
-
     public boolean czyZakryta() { return !Znacznik; }
 
-    public void setZnacznik(boolean znacznik) { this.Znacznik = znacznik; }
     //nie definiuje konstruktora domyślnego, bo nie będę go używał w żadnym scenariuszu.
 }

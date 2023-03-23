@@ -17,7 +17,7 @@ public class OneWayLinkedListWithHead<E> extends AbstractList<E> {
     public OneWayLinkedListWithHead(){}
     public boolean isEmpty() { return head == null; }
     public void clear() { head = null; }
-    public Element getElement(int index){
+    public Element getElement(int index){ //zwracam referencje do elementu
         Element currentElement=head;
         while(index>0 && currentElement!=null){
             index--;
@@ -25,7 +25,7 @@ public class OneWayLinkedListWithHead<E> extends AbstractList<E> {
         }
         return currentElement;
     }
-    public E get(int index) {
+    public E get(int index) { // zwracam null lub kartę zawartą w elemencie
         Element currentElement = getElement(index);
         if (currentElement != null) {
             return currentElement.getKarta();
